@@ -1,0 +1,17 @@
+$fwBold: 600;
+$fwRegular: 400;
+$fsBold: 2.4rem;
+$fsSemiBold1: 2rem;
+$fsSemiBold2: 1.8rem;
+$fontPoppins: "Poppins";
+
+@font-face {
+  font-family: "Poppins";
+  font-weight: $fwBold;
+  src: url(../../fonts/Poppins-Bold.ttf);
+}
+@font-face {
+  font-family: "Poppins";
+  font-weight: $fwRegular;
+  src: url(../../fonts/Poppins-Regular.ttf);
+}

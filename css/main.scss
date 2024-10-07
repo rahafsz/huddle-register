@@ -1,0 +1,158 @@
+@use "../scss/global";
+@use "../scss/variables/colors" as *;
+@use "../scss/variables/fonts" as *;
+@use "../scss/variables/screenSize" as *;
+
+body {
+  background-image: url(../images/bg-desktop.svg);
+}
+.logo {
+  width: 16.5rem;
+  height: 4.06rem;
+}
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+header {
+  padding: 3rem 0;
+}
+.mockup {
+  width: 55%;
+}
+.flex {
+  display: flex;
+  justify-content: space-between;
+}
+.description {
+  width: 39%;
+  margin-top: 5rem;
+}
+h1 {
+  color: $white;
+  font-family: $fontPoppins;
+  font-weight: $fwBold;
+  font-size: $fsBold;
+}
+.description p {
+  color: $white;
+  margin: 1rem 0 2rem;
+  font-family: $fontPoppins;
+  font-weight: $fwRegular;
+}
+a.register {
+  color: $violet;
+  width: 11rem;
+  text-align: center;
+  padding: 0.8rem 1rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 0 0.5rem 0.2rem $violetLight;
+  background-color: $white;
+  font-family: $fontPoppins;
+  font-weight: $fwRegular;
+  transition: background-color, color 0.5s ease-in-out;
+  &:hover {
+    background-color: $softMagenta;
+    color: $white;
+  }
+}
+footer {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: end;
+}
+footer ul {
+  width: 9rem;
+}
+ul li {
+  cursor: pointer;
+  color: $white;
+  padding: 0.5rem;
+  border: 1px solid $white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color, border 0.3s ease-in-out;
+  a {
+    color: inherit;
+    text-align: center;
+    width: 1rem;
+    height: 1rem;
+  }
+  &:hover {
+    border: 1px solid $magenta;
+    color: $magenta;
+  }
+}
+@media ($ipadSmall < width<= $ipad) {
+  .container {
+    max-width: 95%;
+  }
+  .container {
+    max-width: 95%;
+  }
+}
+@media ($ipadSmall < width<= $ipad) {
+  .description {
+    margin-top: 2rem;
+  }
+  h1 {
+    font-size: $fsSemiBold1;
+  }
+}
+@media ($ipadMini < width <= $ipadSmall) {
+  .description {
+    margin-top: 2rem;
+    width: 42%;
+  }
+  h1 {
+    font-size: $fsSemiBold2;
+  }
+  .description p {
+    font-size: 0.9rem;
+  }
+  a.register {
+    width: 9rem;
+  }
+}
+
+@media ($mobile <= width <= $ipadMini) {
+  body {
+    background-image: url(../images/bg-mobile.svg);
+  }
+  header {
+    padding: 1.5rem 0;
+  }
+  .logo {
+    width: 50%;
+  }
+  main .flex {
+    flex-direction: column;
+  }
+  .mockup,
+  .description {
+    width: 100%;
+  }
+  .description {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  h1 {
+    font-size: $fsSemiBold2;
+  }
+  .description p {
+    font-size: 1.02rem;
+  }
+  .register {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a.register {
+    width: 70%;
+  }
+  footer {
+    justify-content: center;
+  }
+}
