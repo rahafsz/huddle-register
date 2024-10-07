@@ -1,33 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Huddle landing page with single introductory section</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+  <meta name="description" content="Huddle re-imagines the way we build communities. You have a voice, but so does your audience. Create connections with your users as you
+  engage in genuine discussion.">
+  <meta property="og:title" content="Huddle" />
+  <meta property="og:image" content="./design/desktop-design.jpg" />
+  <meta property="twitter:title" content="Huddle" />
+  <meta property="twitter:image" content="./design/desktop-design.jpg" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <link rel="stylesheet" href="./css/all.min.css" />
+  <title>Huddle introductory section</title>
 </head>
+
 <body>
-
-  Build The Community Your Fans Will Love
-
-  Huddle re-imagines the way we build communities. You have a voice, but so does your audience. 
-  Create connections with your users as you engage in genuine discussion. 
-
-  Register
-
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
+  <header class="container">
+    <div class="logo">
+      <a href="/" aria-label="Logo"><img src="./images/logo.svg" alt="huddle logo" /></a>
+    </div>
+  </header>
+  <main>
+    <div class="container flex">
+      <div class="mockup">
+        <img src="./images/illustration-mockups.svg" alt="illustration mockups" />
+      </div>
+      <div class="description">
+        <h1>Build The Community Your Fans Will Love</h1>
+        <p>
+          Huddle re-imagines the way we build communities. You have a voice,
+          but so does your audience. Create connections with your users as you
+          engage in genuine discussion.
+        </p>
+        <div class="register">
+          <a href="/" class="register">Register</a>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="container">
+    <ul class="flex">
+      <li>
+        <a href="facebook.com" aria-label="facebook icon"><i class="fa-brands fa-facebook-f"></i></a>
+      </li>
+      <li>
+        <a href="twitter.com" aria-label="twitter icon"><i class="fa-brands fa-twitter"></i></a>
+      </li>
+      <li>
+        <a href="instagram.com" aria-label="instagram icon"><i class="fa-brands fa-instagram"></i></a>
+      </li>
+    </ul>
   </footer>
 </body>
+
 </html>
