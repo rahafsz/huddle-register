@@ -117,7 +117,7 @@ ul li {
   }
 }
 
-@media ($mobile <= width <= $ipadMini) {
+@media (width <= $ipadMini) {
   body {
     background-image: url(../images/bg-mobile.svg);
   }

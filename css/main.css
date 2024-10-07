@@ -160,7 +160,7 @@ ul li:hover {
     width: 9rem;
   }
 }
-@media (375px <= width <= 800px) {
+@media (width <= 800px) {
   body {
     background-image: url(../images/bg-mobile.svg);
   }
