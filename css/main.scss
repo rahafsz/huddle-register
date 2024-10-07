@@ -126,6 +126,7 @@ ul li {
   }
   .logo {
     width: 50%;
+    height: max-content;
   }
   main .flex {
     flex-direction: column;
@@ -154,5 +155,10 @@ ul li {
   }
   footer {
     justify-content: center;
+  }
+}
+@media (width <= $ipadMini) {
+  .description {
+    margin-top: 2rem;
   }
 }

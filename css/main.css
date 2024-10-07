@@ -169,6 +169,8 @@ ul li:hover {
   }
   .logo {
     width: 50%;
+    height: -moz-max-content;
+    height: max-content;
   }
   main .flex {
     flex-direction: column;
@@ -197,5 +199,10 @@ ul li:hover {
   }
   footer {
     justify-content: center;
+  }
+}
+@media (width <= 800px) {
+  .description {
+    margin-top: 2rem;
   }
 }/*# sourceMappingURL=main.css.map */
